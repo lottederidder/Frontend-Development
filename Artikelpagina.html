@@ -3,16 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>Artikelpagina</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Artikelcss2.css" >
     </head>
     <body>
-
+        <!-- <img id="hamburger" src="img/menu-icon.png"> -->
         <!-- header met logo & navigatie -->
         <header>
-            <h1>CMD Amsterdam - Intranet</h1>
+          <!--<button id="hamburger" type="menu">Menu</button> -->
+          <img id="hamburger" src="img/menu-icon.png">
+          <h1>CMD Amsterdam - Intranet</h1>
+           <!--<img src="img/cmd_beeldbank_meerdere_02.jpg" alt="beeldbank"> -->
+           <picture>
+               <source media="(min-width: 778px)" srcset="img/picture_fed_1280.png">
+               <source media="(min-width: 415px)" srcset="img/picture_fed_800.png">
+               <img src="img/picture_fed_480.png" alt="beroepen">
+            </picture>
             <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
-            <img src="cmd_logo.png" alt="CMD Logo">
-            <nav>
-                <ul>
+            <!--<img src="img/cmd_logo.png" alt="beroepen"> -->
+            <nav >
+                <ul id="navigatie">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Opleiding</a></li>
                     <li><a href="#">Onderwijsprogramma</a></li>
@@ -20,16 +29,14 @@
                     <li><a href="#">Stages en projecten</a></li>
                 </ul>
             </nav>
-            <form method="get" action="Artikelpagina.html">
+            <form id="zoekbalk" method="get" action="Artikelpagina.html">
                 <label>
-                    Zoeken
                     <input type="search" placeholder="Zoek op titel, beschrijving, etc…" name="q">
                 </label>
                 <button type="submit">Zoek!</button>
             </form>
             <p class="to-profile"><a href="#">Profielpagina Elena Harris</a></p>
         </header>
-
         <!-- Main article -->
         <main>
 
@@ -38,16 +45,22 @@
                 <header>
                     <h1>Opleiding</h1>
                     <h2>CMD Amsterdam</h2>
-                    <p>De opleiding <span lang="en">Communication &amp; Multimedia Design</span> (CMD) Amsterdam leert studenten alles over het ontwerpen van online interactieve media. Dit betekent het begrijpen, bedenken en maken van interactieve media zoals websites, mobiele applicaties en interactieve televisie. Bij het ontwerpen van interactieve media staat de mens centraal. Niet alleen als eindgebruiker van een toepassing maar ook in de context van zijn leefomgeving. Studenten doen toegepast onderzoek en leren hun ontwerpen te testen op usability, gebruikersbehoefte en meetbare eindresultaten. Ze leren werken in multidisciplinaire projectteams aan opdrachten voor echte projectpartners.</p>
+                    <p class="alinea">De opleiding <span lang="en">Communication &amp; Multimedia Design</span> (CMD) Amsterdam leert studenten alles over het ontwerpen van online interactieve media. Dit betekent het begrijpen, bedenken en maken van interactieve media zoals websites, mobiele applicaties en interactieve televisie. Bij het ontwerpen van interactieve media staat de mens centraal. Niet alleen als eindgebruiker van een toepassing maar ook in de context van zijn leefomgeving. Studenten doen toegepast onderzoek en leren hun ontwerpen te testen op usability, gebruikersbehoefte en meetbare eindresultaten. Ze leren werken in multidisciplinaire projectteams aan opdrachten voor echte projectpartners.</p>
                     <p>De <a href="#opbouw" title="opbouw studieprogramma">vakken</a> gaan over interactie &amp; strategie, -design, -techniek en -cultuur. In de vakken leren studenten te denken en te handelen als een ontwerper. Hiervoor leren ze naast ‘ontwerpen’ ook ‘maken’, ‘onderzoeken’, ‘projectmanagen’ en ‘adviseren’. Studenten kunnen met behulp van keuzevakken, stages en minoren zelf richting geven aan hun opleiding. Na hun afstuderen komen studenten te werken in de creatieve industrie, gericht op de sector ‘nieuwe media’. Het werkveld waarin de interactieve media ontwerper zich begeeft is sterk in ontwikkeling. De opleiding houdt hier met een flexibel curriculum rekening mee en door met (keuze)vakken en projecten in te springen op nieuwe ontwikkelingen.</p>
                 </header>
+
+               <video controls>
+                        <source src="Video/CMDA_V2_Frontend_2.webm" type="video/webm">
+                        <source src="Video/CMDA_V2_Frontend_2.mp4" type="video/ogg">
+                        <p> <a href="Video/CMDA_V2_Frontend_2.webm" download> Download dit filmpje!</a></p>
+                    </video>
 
                 <section>
                     <h3>Ontwerpopleiding voor Interactieve Media</h3>
                     <p>CMD Amsterdam stelt ontwerpen centraal in de opleiding. Zij wil studenten leren te denken als een ontwerper en opleiden tot interactieve media ontwerpers met een goede aansluiting op de huidige én de toekomstige beroepspraktijk.</p>
-                    <p><em>CMD Amsterdam is een ontwerpopleiding die studenten opleidt om te denken als een ontwerper bij het ontwikkelen van interactieve toepassingen;</em></p>
+                    <p class="quote"><em>"CMD Amsterdam is een ontwerpopleiding die studenten opleidt om te denken als een ontwerper bij het ontwikkelen van interactieve toepassingen."</em></p>
                     <p>CMD Amsterdam gelooft in het 'human centered' ontwerpproces. Wij zien een steeds grotere rol weggelegd voor ontwerpers die in staat zijn om te kijken naar de menselijke kant van interactieve media. In onze visie ontwikkelt de 'human centered' aanpak zich steeds meer naar het bestuderen van de mens in zijn sociale en maatschappelijke context als aanleiding voor en onderbouwing van interactieve media concepten. Daarnaast blijft het belangrijk om te kijken naar de mens op het moment dat hij in aanraking komt met interactieve media, zijn gedrag serieus te nemen en te verwerken in het ontwerpproces. CMDA ziet dan ook een meerwaarde in het inbedden van toegepast onderzoek en prototyping in het curriculum en wil studenten hierin helpen en stimuleren.</p>
-                    <p><em>Bij CMD Amsterdam staat de mens centraal, niet alleen als eindgebruiker van een ontwikkelde toepassing maar ook als mens met <a href="#opbouw" title="opbouw studieprogramma">sociaal-maatschappelijke context</a>;</em></p>
+                    <p class=quote><em>Bij CMD Amsterdam staat de mens centraal, niet alleen als eindgebruiker van een ontwikkelde toepassing maar ook als mens met <a href="#opbouw" title="opbouw studieprogramma">sociaal-maatschappelijke context</a>;</em></p>
                     <p>CMD Amsterdam heeft een kernprogramma dat alle studenten moeten volgen. De propedeuse is opgebouwd uit 12 kernvakken en 3 projecten. In jaar 2 en 3 kunnen studenten, naast een kernprogramma, een set profileringsvakken kiezen. Hiermee kunnen ze zich in meer of mindere mate richten op een van de vijf beroepen waar de opleiding voor opleidt.</p>
                 </section>
 
@@ -59,12 +72,12 @@
                 <section>
                     <h3>Beroepen</h3>
                     <h4>Waar leiden we voor op?</h4>
-                    <img src="images/beroepen.jpg" alt="Beroepen waar CMD voor opleidt: Frontend Developer, Visual Designer, Interaction Designer, Content Manager, Projectmanager.">
+                    <img class="beroepen" src="img/beroepen.jpg" alt="Beroepen waar CMD voor opleidt: Frontend Developer, Visual Designer, Interaction Designer, Content Manager, Projectmanager.">
                     <p>Studenten kunnen na deze opleiding aan het werk in een grote diversiteit aan beroepen in het interactieve media werkveld. Tijdens de opleiding kunnen zij zich – naast het generieke kernprogramma – middels de profileringsvakken individueel ontwikkelen.</p>
                     <p>Afgestudeerde studenten komen daarmee in aanmerking voor o.a. de volgende vijf beroepen: Visual Interface Designer, Frontend Developer, Projectmanager, Contentmanager en Interaction Designer. Variaties hierop zijn natuurlijk mogelijk.</p>
                     <p>Mocht je als aankomend student meer willen weten of contact op willen nemen met een afgestudeerde student? Neem <a href="#">contact</a> met ons op.</p>
                     <h4>Uitstroomberoepen</h4>
-                    <ol>
+                    <ol id="uitstroomberoepen">
                         <li><a href="#">Frontend developer</a></li>
                         <li><a href="#">Visual designer</a></li>
                         <li><a href="#">Interaction designer</a></li>
@@ -76,13 +89,12 @@
             </article>
 
         </main>
-
         <!-- 5 related articles -->
         <section class="related">
 
             <h2>Meer lezen?</h2>
 
-            <article>
+            <article class="artikel">
                 <header>
                     <h3>Rijk in het Oosten</h3>
                     <p>Gepost door Mattijs Blekemolen</p>
@@ -105,7 +117,7 @@
                 <p>Ben je student bij CMD Amsterdam en lijkt het je leuk om in het tweede semester van het derde studiejaar een half jaar in Oostenrijk te studeren? Dat kan nog! De deadline voor aanmeldingen is medio september 2014. Wil je als docent volgend studiejaar graag een weekje op uitwisseling of heb je interesse in een gastcollege van docenten uit Oostenrijk? <a href="mailto:m.blekemolen@hva.nl">Stuur mij een mailtje</a> als je interesse hebt, dan help ik je verder.</p>
             </article>
 
-            <article>
+            <article class="artikel">
                 <header>
                     <h3>Open Dag bij CMD Amsterdam</h3>
                     <p>Gepost door Janet Pietersen</p>
@@ -119,7 +131,7 @@
                 <p>Op <time datetime="2014-04-15">dinsdag 15 april 2014</time> verwelkomen wij alle studenten (en hun ouders natuurlijk) die meer willen weten over onze opleiding CMD Amsterdam. Tussen 18.00 - 21.00 uur kun je via diverse presentaties en workshops zien wie we zijn en wat we doen. Bekijk studentenwerk, hoor meer over de vakken en ontdek wat je zoal kunt gaan doen na de studie. Er staan studenten en docenten klaar om al je vragen te beantwoorden. Oja, en de koffie. Die staat ook klaar. Kijk op <a href="http://www.hva.nl/cmd">www.hva.nl/cmd</a> voor meer info. Het is aan te bevelen om je vooraf al te registreren. Dat maakt het voor jezelf en voor ons makkelijker.</p>
             </article>
 
-            <article>
+            <article class="artikel">
                 <header>
                     <h3>Hej hej!</h3>
                     <p>Gepost door Mattijs Blekemolen</p>
@@ -135,7 +147,7 @@
                 <p>Is deze partner dan wel geschikt voor CMD? Dat hangt af van wat je als CMD student wilt leren. Wil je je visual design skills uitbreiden / versterken? Dat zou prima kunnen met het vak Graphic Design. Wil je beter worden om een maatschappelijk probleem te onderzoeken en dit verhaal te vertellen / presenteren in een kort filmpje dat je zelf maakt (storytelling)? Dat kan via het vak Journalism en Photography. En je kunt een basiscursus Zweeds volgen! Dat is løk! Maar wil je je verdiepen in meer direct CMD gerelateerde kennis en vaardigheden? Nog beter worden in interaction design of frontend development? Dan zijn er wellicht andere opleidingen (minoren) die daar beter op aansluiten. Op deze site vind je ook een overzicht van de andere internationale CMD partnerscholen.</p>
             </article>
 
-            <article>
+            <article class="artikel">
                 <header>
                     <h3>What Design Can Do!</h3>
                     <p>Gepost door Jacub Nolsen</p>
@@ -152,7 +164,7 @@
                 <p>That's what design can do.</p>
             </article>
 
-            <article>
+            <article class="artikel">
                 <header>
                     <h3>Berlin, here we come!</h3>
                     <p>Gepost door Mattijs Blekemolen</p>
@@ -167,7 +179,6 @@
             </article>
 
         </section>
-
         <!-- Sidebar teksten en info: Laatste mededelingen, Agenda, Twitter -->
         <aside>
 
@@ -264,9 +275,9 @@
             -->
 
         </aside>
-
         <!-- Footer informatie -->
-        <footer>
+
+        <footer id="footer">
             <section id="sitemap">
                 <h2>Sitemap</h2>
                 <ul>
@@ -345,6 +356,6 @@
             <p id="feedback"><a href="#">Geef ons feedback</a></p>
 
         </footer>
-
+        <script src="JS/artikeljs.js"></script>
     </body>
 </html>

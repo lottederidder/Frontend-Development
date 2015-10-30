@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Formulierpagina</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Formuliercss2.css" >
     </head>
     <body>
 
         <!-- header met logo & navigatie -->
         <header>
+           <img id="hamburger" src="img/menu-icon.png">
             <h1>CMD Amsterdam - Intranet</h1>
             <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
-            <img src="img/cmd_logo.png" alt="">
+            <img src="img/cmd_beeldbank_meerdere_02.jpg" alt="beeldbank">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -75,11 +77,11 @@
 
                 <fieldset>
                     <legend>Ik wil mij aanmelden:</legend>
-                    <label>
+                    <label id="knop">
                         <input type="radio" name="submit-for" value="project">
                         <span>Voor een project</span>
                     </label>
-                    <label>
+                    <label id="knop1">
                         <input type="radio" name="submit-for" value="stage">
                         <span>Als stagebedrijf</span>
                     </label>
@@ -516,6 +518,6 @@
             <p id="feedback"><a href="#">Geef ons feedback</a></p>
 
         </footer>
-
+        <script src="JS/artikeljs.js"></script>
     </body>
 </html>

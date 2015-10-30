@@ -1,0 +1,311 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+nav > ul > li {
+    list-style-type: none;
+    background-color: #FFCC00;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    }
+
+    nav > ul {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    background-color: #FFCC00;
+    }
+
+    #hamburger {
+    display: none;
+    }
+
+/* HEADER */
+    body > header > h1 {
+    font-size: 3em;
+    text-align: center;
+    background-color: #FFCC00;
+    margin: 0;
+    padding:10px;
+    border-bottom: 5px solid #E3B600;
+    border-right: 5px solid #E3B600;
+    }
+
+    body > header > p {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: #FFCC00 1px 1px 5px;
+    }
+
+    #zoekbalk {
+    float: right;
+    }
+
+@media screen and (min-width: 0) and (max-width: 414px) {
+/* navigatie */
+    nav > ul > li {
+    list-style-type: none;
+    background-color: #FFCC00;
+    border: 1px solid #FFFFFF;
+    }
+
+    nav > ul {
+    text-align: center;
+    height: 0; /* haalt nav weg */
+    overflow: hidden; /* haalt woorden weg */
+    position: absolute;
+    top: 33px;
+    margin-left:-40px;
+    width: 100%
+    }
+
+    #hamburger {
+    width: 10%;
+    float: left;
+    margin-top: -3px;
+    }
+
+/* HEADER */
+    body > header > h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 6px;
+    }
+
+    body > header > p {
+    text-align: center;
+    font-size: 0.9em;
+    text-shadow: #FFCC00 1px 1px 5px;
+    }
+
+    #zoekbalk {
+    float: right;
+    }
+
+    body > header > img {
+    width: 100%;
+    }
+
+/* MAIN */
+    main {
+    flex: 1 1 %;
+    margin: 0 1em 0 1em;
+    order: 1;
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    }
+
+
+/* SECTION RELATED */
+    .related {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F0F0F0;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    }
+
+/* ASIDE */
+    aside {
+    display: none;
+}
+
+/* FOOTER */
+    #footer {
+    background: #F0F0F0;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 7px solid #ffcc00;
+    border-radius: 40px;
+}
+
+}
+
+@media screen and (min-width: 415px) and (max-width: 778px) {
+/* NAVIGATIE */
+    nav > ul > li {
+    list-style-type: none;
+    background-color: #FFCC00;
+    border: 1px solid #FFFFFF;
+    }
+
+    nav > ul {
+    text-align: center;
+    height: 0; /* haalt nav weg */
+    overflow: hidden; /* haalt woorden weg */
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    }
+
+    #hamburger {
+    width: 10%;
+    float: left;
+    margin-top: 6px;
+    }
+
+/* HEADER */
+    body > header > h1 {
+    font-size: 3em;
+    text-align: center;
+    background-color: #FFCC00;
+    padding:10px;
+    border-bottom: 5px solid #E3B600;
+    border-right: 5px solid #E3B600;
+    }
+
+    body > header > p {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: #FFCC00 1px 1px 5px;
+    }
+
+    #zoekbalk {
+    float: right;
+    }
+
+    body > header > img {
+    width: 100%;
+    }
+
+/* MAIN */
+    main {
+    flex: 1 1 %;
+    margin: 0 1em 0 1em;
+    order: 1;
+    }
+
+    main > article > header > h1 {
+    font-size: 1.2em;
+    }
+
+    main > article > header > h2 {
+    font-size: 1em;
+    }
+
+    main article header p {
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    width: 49%;
+    }
+
+    main article section p {
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    width: 49%;
+    }
+
+    .quote {
+    background-color: lightyellow;
+    width: 49%;
+    text-align: center;
+    text-shadow: 1px 1px 9px #FFCC00;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    border-right:  5px solid #FFCC00;
+    border-left: 5px solid #FFCC00;
+    }
+
+    .beroepen {
+    width: 100%;
+    border: 2px solid #FFCC00;
+    }
+
+    #uitstroomberoepen {
+    background-color: lightyellow;
+    padding: 20px 20px 20px 270px;
+    border: 5px solid #FFCC00;
+    }
+
+    video{
+    width:50%;
+    }
+
+/* SECTION RELATED */
+    .artikel {
+    background-color: #F0F0F0;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    }
+
+/* ASIDE */
+    aside {
+    position: absolute;
+    top: 600px;
+    width: 40%;
+    right: 0;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1em;
+    border-radius: 0 60px 60px 0px;
+    border-right: 7px solid #FFCC00;
+    }
+
+/* FOOTER */
+    #footer {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    #sitemap {
+    flex: 1;
+    }
+    #contact {
+    flex: 1;
+    }
+    #search {
+    flex: 1;
+    }
+    #about {
+    flex: 1;
+    }
+    #credits {
+    flex: 1;
+    }
+    #feedback {
+    position: fixed;
+    bottom: 0;
+    right:0;
+    text-align: right;
+    padding: 1vw;  /*Hij schaalt mee met scherm*/
+    transition: 2s;
+    background-color: #F0F0F0;
+    }
+
+    #footer {
+    background: #F0F0F0;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 7px solid #ffcc00;
+    border-radius: 40px;
+}
+
+}
+
+
+
+
+.is-visible {
+    display: none;
+    }

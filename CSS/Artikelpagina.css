@@ -1,0 +1,278 @@
+body {
+    background: #677077;
+    position: relative;
+    top: 50px;
+    font-family: Tahoma;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    display: inline;
+    top: 0;
+    left:0;
+    right:0;
+    margin:0;
+    background-color: #252839;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:first-of-type {
+    text-shadow: 2px 2px 10px grey;
+}
+header ul li:nth-of-type(2) {
+    text-shadow: 2px 2px 10px grey;
+}
+header ul li:nth-of-type(3) {
+    text-shadow: 2px 2px 10px grey;
+}
+header ul li:nth-of-type(4) {
+    text-shadow: 2px 2px 10px grey;
+}
+header ul li:nth-of-type(5) {
+    text-shadow: 2px 2px 10px grey;
+}
+
+body > header > h1{
+    text-shadow: 1px 1px 10px black;
+    color:#f2b632;
+}
+body > header {
+    background: #b5b5b7;
+    border: 5px solid #b5b5b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px grey;
+    margin-bottom: 20px;
+}
+
+input[type="search"] {
+    background-color: yellow;
+}
+
+main {
+    background: #b5b5b7;
+    border: 5px solid #b5b5b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px grey;
+    margin-bottom: 20px;
+}
+
+main > article > header > h1 {
+    text-shadow: 1px 1px 10px black;
+    color: #f2b632;
+}
+
+main > article > section > img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > article {
+    width:100%;
+}
+
+section.related > h2 {
+    width: 100%;
+    text-shadow: 1px 1px 10px black;
+    color: #f2b632;
+    text-align: center;
+}
+
+main > article > section > h3 {
+    text-align: center;
+}
+
+main > article > section > h4 {
+    text-align: center;
+}
+
+section.related {
+    background: #b5b5b7;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-display: flex;
+    display: flex;
+    border: 5px solid #b5b5b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px grey;
+    margin-bottom: 20px;
+}
+
+section.related > article {
+    padding: 10px;
+    flex: 1;
+}
+
+section.related > article  h3 {
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    color: #f2b632;
+}
+
+body > aside {
+    display:flex;
+    background: #b5b5b7;
+    border: 5px solid #b5b5b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px grey;
+    margin-bottom: 20px;
+}
+
+aside > section > h2 > a {
+    text-shadow: 7px 3px 10px black;
+    color: #f2b632;
+    text-decoration: none;
+}
+
+aside > section > article {
+    border:3px dashed purple;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+aside > section > article > h3 {
+    text-shadow: 1px 1px 10px black;
+    color: #f2b632;
+}
+
+body > footer {
+    -webkit-display: flex;
+    display: flex;
+    background: #b5b5b7;
+    border: 5px solid #b5b5b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px grey;
+    margin-bottom: 20px;
+}
+
+body > footer section {
+    padding:10px;
+}
+
+body > footer h2 {
+    text-shadow: 3px 2px 10px black;
+    color: #f2b632;
+}
+
+header > img:active {
+    transform:rotate(20deg) scale(.6);
+    transition:1s;
+}
+header > img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > article > section > img:hover {
+    transform:scale(.7);
+    transition:2s;
+}
+
+
+body form {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+#feedback {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: yellowgreen;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgreen;
+}
+
+#feedback:hover {
+    transform: rotate(20deg);
+    transition:1.5s;
+    background-color: lightgray;
+}
+
+fieldset {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+fieldset + input {
+    width: 10em;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    background-color:deeppink;
+}
+
+
+@media screen and (max-width: 50em) {
+    nav {
+        background-color: #677077;
+    }
+    body {
+        background-color: #252839;
+        top: 70px;
+    }
+    body > header {
+    border: .5em solid darkgrey;
+    margin: 1em;
+    }
+    body > main {
+    border: .5em solid darkgrey;
+    margin: 1em;
+    }
+    body > section.related {
+    border: .5em solid darkgrey;
+    margin: 1em;
+    }
+    body > aside {
+        flex-wrap: wrap;
+    }
+    body > footer {
+        border: .5em solid darkgrey;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+
+    nav {
+        background-color: #f2b632;
+    }
+    nav ul li {
+        display: block;
+        border: 1px solid lightyellow;
+    }
+    nav ul li:hover{
+        transform: scale(1.6);
+        transition:all 1s ease-in-out;
+    }
+    body {
+        background-color: #677077;
+        top: 135px;
+    }
+    body > aside {
+        flex-wrap: wrap;
+        border: .5em solid darkgrey;
+        margin: 1em;
+    }
+    body > footer {
+        border: .5em solid darkgrey;
+        margin: 1em;
+    }
+}
